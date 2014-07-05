@@ -13,7 +13,12 @@ using UnityEngine;
 namespace Application {
 	public class BehindDetection : MonoBehaviour {
 		int cars = 0;
+		GameObject detector;
 		public BehindDetection () {
+		}
+
+		void OnStart() {
+			detector = GameObject.Find ("Behind Detection");
 		}
 
 		void OnTriggerEnter (Collider collider) {
@@ -24,11 +29,15 @@ namespace Application {
 			}
 		}
 
-		void OnTriggerExit() {
+		void OnTriggerExit(Collider collider) {
 			if (collider.name.Contains("Car")) {
 				cars--;
 				Debug.Log(cars + " cars");
 			}		
+		}
+
+		void OnCollisionEnter (Collision collision) {
+			Debug.Log("Collision");
 		}
 	}
 }
