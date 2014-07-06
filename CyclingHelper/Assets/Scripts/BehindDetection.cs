@@ -13,12 +13,10 @@ using UnityEngine;
 namespace Application {
 	public class BehindDetection : MonoBehaviour {
 		int cars = 0;
-		GameObject detector;
 		public BehindDetection () {
 		}
 
 		void OnStart() {
-			detector = GameObject.Find ("Behind Detection");
 		}
 
 		void OnTriggerEnter (Collider collider) {
