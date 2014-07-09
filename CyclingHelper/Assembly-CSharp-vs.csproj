@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BehindDetection.cs" />
+     <Compile Include="Assets\Scripts\BikeChainSound.cs" />
      <Compile Include="Assets\Scripts\CarMoveSquare.cs" />
      <Compile Include="Assets\Scripts\CarMoveTest.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\CharacterMotor.cs" />

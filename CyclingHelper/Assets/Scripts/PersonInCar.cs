@@ -17,7 +17,7 @@ namespace Application
 
 		void OnTriggerEnter(Collider collider) {
 			if (collider.gameObject.name == "First Person Controller") {
-				Debug.Log("Near a person car");
+				GameObject.Find("Person Vehicle").audio.Play();
 			}
 		}
 	}
