@@ -17,7 +17,7 @@ namespace AssemblyCSharp {
 		}
 
 		void Start() {
-			controller = (CharacterController) gameObject.GetComponent<CharacterController>();
+			controller = gameObject.GetComponent<CharacterController>();
 		}
 
 		void Update() {

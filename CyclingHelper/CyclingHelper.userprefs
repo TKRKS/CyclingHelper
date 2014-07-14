@@ -1,13 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CarMoveTest.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Car.cs">
     <Files>
-      <File FileName="Assets/Scripts/First-Person Controller/CharacterMotor.cs" Line="1" Column="18" />
-      <File FileName="Assets/Scripts/BehindDetection.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/CarMoveTest.cs" Line="44" Column="29" />
-      <File FileName="Assets/Scripts/HUD.cs" Line="24" Column="61" />
-      <File FileName="Assets/Scripts/PersonInCar.cs" Line="20" Column="34" />
-      <File FileName="Assets/Scripts/CarMoveSquare.cs" Line="34" Column="26" />
+      <File FileName="Assets\Scripts\Car.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
