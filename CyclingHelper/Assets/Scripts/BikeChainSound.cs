@@ -21,7 +21,7 @@ namespace AssemblyCSharp {
 		}
 
 		void Update() {
-			gameObject.audio.volume = Remap(controller.velocity.magnitude, 0, 3, 0, .15f);
+			gameObject.audio.volume = Remap(controller.velocity.magnitude, 0, 3, 0, .01f);
 		}
 
 		float Remap (float value, float low1, float high1, float low2, float high2) {

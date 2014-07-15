@@ -32,11 +32,11 @@ namespace Assets.Scripts
                 float closestCarDistance = DistToPlayer(closestCar);
 
                 c.UpdateSpeedMultiplier(closestCarDistance < 15 ? closestCarDistance.Remap(0, 15, 0, 1) : 1);
-                alertSound.pitch = closestCarDistance >= 15 ? 0 : 1.4f - closestCarDistance.Remap(0, 15, 0.5f, 1.3f);
+                alertSound.pitch = closestCarDistance >= 15 ? .1f : 1.4f - closestCarDistance.Remap(0, 15, 0.5f, 1.3f);
             }
             else
             {
-                alertSound.pitch = 1;
+                alertSound.pitch = .1f;
             }
 		}
 
@@ -52,8 +52,6 @@ namespace Assets.Scripts
 			if (gameObj.GetComponent<Car>() != null)
             {
                 cars.Add(gameObj);
-                if (cars.Count == 1)
-                    alertSound.Play();
             }
 		}
 
@@ -67,8 +65,6 @@ namespace Assets.Scripts
                 cars.Remove(gameObj);
 
                 car.UpdateSpeedMultiplier(1);
-                if (cars.Count == 0)
-                    alertSound.Stop();
             }
 		}
 	}

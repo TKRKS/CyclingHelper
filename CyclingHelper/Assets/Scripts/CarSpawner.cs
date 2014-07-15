@@ -57,7 +57,7 @@ namespace Assets.Scripts
 
             // Instantiate a new car
             var newCar = Instantiate(carPrefab, transform.position, rotation) as GameObject;
-            
+			            
             // Keep track of cars we're responsible for, and remove them when they are destroyed
             var carScript = newCar.GetComponent<Car>();
             spawnedCars.Add(newCar);

@@ -13,7 +13,7 @@ namespace Assets.Scripts
 
 	public class HUD : MonoBehaviour
     {
-        private readonly Rect titleRect = new Rect(10, 10, 200, 90);
+        private readonly Rect titleRect = new Rect(10, 10, 200, 120);
 
         private List<Alerts> alerts;
 
