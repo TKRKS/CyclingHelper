@@ -6,12 +6,14 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    [AddComponentMenu("Audio Trigger")]
-    public class AudioTrigger : MonoBehaviour
+    [AddComponentMenu("One-Way Trigger")]
+    public class OneWayTrigger : MonoBehaviour
     {
-        public AudioSource audioSrc;
         public Axis movementAxis;
         public bool negativeDirection;
+
+        // Fired when the user goes through the trigger the correct direction
+        public event Action Triggered;
 
         private Vector3 enterPos, exitPos;
         void OnTriggerEnter(Collider other)
@@ -31,8 +33,8 @@ namespace Assets.Scripts
             float finalValue = movementAxis == Axis.X ? exitPos.x : exitPos.z;
 
             // We only want to trigger in a certain direction, not both
-            if (negativeDirection == finalValue < initialValue)
-                audioSrc.Play();
+            if (negativeDirection == finalValue < initialValue && Triggered != null)
+                Triggered();
         }
     }
 }

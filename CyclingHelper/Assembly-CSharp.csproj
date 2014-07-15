@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Extensions.cs" />
-     <Compile Include="Assets\Scripts\AudioTrigger.cs" />
      <Compile Include="Assets\Scripts\Axis.cs" />
      <Compile Include="Assets\Scripts\BehindDetection.cs" />
      <Compile Include="Assets\Scripts\BikeChainSound.cs" />
@@ -60,7 +59,9 @@
      <Compile Include="Assets\Scripts\First-Person Controller\MouseLook.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\PlatformInputController.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />
+     <Compile Include="Assets\Scripts\OneWayTrigger.cs" />
      <Compile Include="Assets\Scripts\PersonInCar.cs" />
+     <Compile Include="Assets\Scripts\TriggeredAudio.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
