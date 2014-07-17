@@ -1,18 +1,34 @@
 
-.idea/.name
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Obj/
+UnityGenerated/
+Library/
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.user
+*.unityproj
+*.booproj
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
 
-.idea/compiler.xml
-
-*.xml
-
-CyclingHelper/CyclingHelper-csharp.sln
-
-CyclingHelper/CyclingHelper.sln
-
-CyclingHelper/Library/assetDatabase3
-
-CyclingHelper/Library/CurrentLayout.dwlt
-
-CyclingHelper/CyclingHelper-csharp.sln
-
-*.sln

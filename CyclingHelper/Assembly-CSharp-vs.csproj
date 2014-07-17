@@ -46,16 +46,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Axis.cs" />
      <Compile Include="Assets\Scripts\BehindDetection.cs" />
      <Compile Include="Assets\Scripts\BikeChainSound.cs" />
+     <Compile Include="Assets\Scripts\Car.cs" />
+     <Compile Include="Assets\Scripts\CarKillZone.cs" />
      <Compile Include="Assets\Scripts\CarMoveSquare.cs" />
-     <Compile Include="Assets\Scripts\CarMoveTest.cs" />
+     <Compile Include="Assets\Scripts\CarSpawner.cs" />
+     <Compile Include="Assets\Scripts\Drawing.cs" />
+     <Compile Include="Assets\Scripts\Extensions.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\CharacterMotor.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\FPSInputController.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\MouseLook.cs" />
      <Compile Include="Assets\Scripts\First-Person Controller\PlatformInputController.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />
+     <Compile Include="Assets\Scripts\OneWayTrigger.cs" />
      <Compile Include="Assets\Scripts\PersonInCar.cs" />
+     <Compile Include="Assets\Scripts\TriggeredAudio.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

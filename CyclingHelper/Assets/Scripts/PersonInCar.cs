@@ -12,12 +12,47 @@ using UnityEngine;
 namespace Application
 {
 	public class PersonInCar : MonoBehaviour {
+
+		private bool triggered = false;
+		private float timeSinceTrigger = 0f;
+		private float displayTime = 5f;
+
 		public PersonInCar () {
+		}
+
+		void Update() {
+			if (triggered) {
+				timeSinceTrigger += Time.deltaTime;
+				if (timeSinceTrigger > displayTime) {
+					triggered = false;
+					timeSinceTrigger = 0f;
+				}
+			}
+		}
+
+		void OnGUI() {
+			if (triggered) {
+				//Body
+				Drawing.DrawLine(new Vector2(110, 60), new Vector2(110, 100), Color.white, 3);
+				//Legs
+				Drawing.DrawLine(new Vector2(110, 100), new Vector2(100, 120), Color.white, 3);
+				Drawing.DrawLine(new Vector2(110, 100), new Vector2(120, 120), Color.white, 3);
+				//Arms
+				Drawing.DrawLine(new Vector2(110, 70), new Vector2(100, 90), Color.white, 3);
+				Drawing.DrawLine(new Vector2(110, 70), new Vector2(120, 90), Color.white, 3);
+				//Head
+				Drawing.DrawLine(new Vector2(100, 60), new Vector2(120, 60), Color.white, 3);
+				Drawing.DrawLine(new Vector2(120, 60), new Vector2(120, 40), Color.white, 3);
+				Drawing.DrawLine(new Vector2(120, 40), new Vector2(100, 40), Color.white, 3);
+				Drawing.DrawLine(new Vector2(100, 40), new Vector2(100, 60), Color.white, 3);
+			}
 		}
 
 		void OnTriggerEnter(Collider collider) {
 			if (collider.gameObject.name == "First Person Controller") {
 				GameObject.Find("Person Vehicle").audio.Play();
+				triggered = true;
+				timeSinceTrigger = 0;
 			}
 		}
 	}
