@@ -9,7 +9,6 @@ namespace Assets.Scripts
 	public class BehindDetection : MonoBehaviour 
     {
         public GameObject audioSrcObj;
-		public AudioSource ambientSound;
 
 		private AudioSource alertSound;
         private HashSet<GameObject> cars;
@@ -34,12 +33,10 @@ namespace Assets.Scripts
 
                 c.UpdateSpeedMultiplier(closestCarDistance < 15 ? closestCarDistance.Remap(0, 15, 0, 1) : 1);
                 alertSound.pitch = closestCarDistance >= 15 ? .1f : 1.4f - closestCarDistance.Remap(0, 15, 0.5f, 1.3f);
-				ambientSound.pitch = cars.Count > 4 ? 1.5f : ((float) cars.Count).Remap(0f, 4f, .5f, 1.5f);
             }
             else
             {
                 alertSound.pitch = .1f;
-				ambientSound.pitch = .5f;
             }
 		}
 
@@ -66,7 +63,6 @@ namespace Assets.Scripts
             if ((car = gameObj.GetComponent<Car>()) != null)
             {
                 cars.Remove(gameObj);
-
                 car.UpdateSpeedMultiplier(1);
             }
 		}

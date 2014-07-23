@@ -6,9 +6,9 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-
-	public enum AlertType {
-		RIGHT, LEFT, STOP
+	public enum AlertType 
+    {
+		RIGHT, LEFT, STOP, NO_GUI
 	}
 
     [RequireComponent(typeof(OneWayTrigger))]
@@ -35,19 +35,25 @@ namespace Assets.Scripts
             };
         }
 
-		void Update() {
-			if (triggered) {
+		void Update()
+        {
+			if (triggered) 
+            {
 				timeSinceTrigger += Time.deltaTime;
-				if (timeSinceTrigger > timeToDisplay) {
+				if (timeSinceTrigger > timeToDisplay)
+                {
 					triggered = false;
 					timeSinceTrigger = 0f;
 				}
 			}
 		}
 
-		void OnGUI() {
-			if (triggered) {
-				switch (alertType) {
+		void OnGUI() 
+        {
+			if (triggered) 
+            {
+				switch (alertType)
+                {
 					case AlertType.LEFT:
 						drawLeftArrow();
 						break;
@@ -61,19 +67,22 @@ namespace Assets.Scripts
 			}
 		}
 
-		private void drawLeftArrow() {
+		private void drawLeftArrow() 
+        {
 			Drawing.DrawLine(new Vector2(70, 60), new Vector2(140, 60), Color.white, 5);
 			Drawing.DrawLine(new Vector2(70, 60), new Vector2(90, 45), Color.white, 5);
 			Drawing.DrawLine(new Vector2(70, 60), new Vector2(90, 75), Color.white, 5);
 		}
 
-		private void drawRightArrow() {
+		private void drawRightArrow() 
+        {
 			Drawing.DrawLine(new Vector2(70, 60), new Vector2(140, 60), Color.white, 5);
 			Drawing.DrawLine(new Vector2(140, 60), new Vector2(120, 45), Color.white, 5);
 			Drawing.DrawLine(new Vector2(140, 60), new Vector2(120, 75), Color.white, 5);
 		}
 
-		private void drawStopSign() {
+		private void drawStopSign()
+        {
 			Drawing.DrawLine(new Vector2(120, 40), new Vector2(100, 40), Color.red, 5);
 			Drawing.DrawLine(new Vector2(100, 40), new Vector2(80, 60), Color.red, 5);
 			Drawing.DrawLine(new Vector2(80, 60), new Vector2(80, 80), Color.red, 5);
