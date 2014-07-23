@@ -14,7 +14,7 @@ namespace Assets.Scripts
 
 		void Update() 
         {
-			gameObject.audio.volume = controller.velocity.magnitude.Remap(0, 3, 0, .1f);
+			gameObject.audio.volume = controller.velocity.magnitude.Remap(0, 3, 0, .05f);
 		}
 	}
 }

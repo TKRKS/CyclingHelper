@@ -1,13 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BehindDetection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BikeChainSound.cs">
     <Files>
-      <File FileName="Assets/Scripts/TriggeredAudio.cs" Line="18" Column="37" />
-      <File FileName="Assets/Scripts/BikeChainSound.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BehindDetection.cs" Line="41" Column="38" />
+      <File FileName="Assets/Scripts/TriggeredAudio.cs" Line="97" Column="1" />
+      <File FileName="Assets/Scripts/BikeChainSound.cs" Line="17" Column="78" />
+      <File FileName="Assets/Scripts/BehindDetection.cs" Line="47" Column="61" />
       <File FileName="Assets/Scripts/CarSpawner.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/HUD.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/PersonInCar.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Axis.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Car.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CarKillZone.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CarMoveSquare.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Extensions.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LowTrafficTrigger.cs" Line="26" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
